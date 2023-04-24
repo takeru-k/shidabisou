@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>志田美装</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+  <!-- slickのCSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="l-header js-header">
+    <div class="l-header__inner">
+      <h1 class="l-header__logo"><a href="index.html"><img src="images/icon/logo.png" alt=""></a></h1><!-- /.l-header__logo -->
+
+      <button type="button" class="c-hamburger js-btn">
+        <span class="c-hamburger__line"></span><!-- /.c-hamburger__line -->
+      </button><!-- /.c-hamburger -->
+    </div><!-- /.l-header__inner -->
+
+    <nav class="l-header__nav">
+      <ul class="l-header__menu">
+        <li><a href="index.html">ホーム</a></li>
+         <li><a href="about.html">志田美装について</a></li>
+        <li><a href="service.html">サービス紹介</a></li>
+        <li><a href="archive.html">施工実績</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul><!-- /.l-header__menu -->
+    </nav>
+  </header><!-- /.l-header -->
+
+  <main>
+    <div class="p-mainVisual">
+
+      <ul class="p-mainVisual__slider" id="js-slider">
+        <li>
+          <img src="images/mv1.jpeg" alt="">
+        </li>
+        <li>
+          <img src="images/mv2.JPG" alt="">
+        </li>
+        <li>
+          <img src="images/mv3.JPG" alt="">
+        </li>
+      </ul><!-- /.p-mainVisual__slider -->
+
+      <div class="p-mainVisual__text">
+        <h1>まごころの塗装屋さん</h1>
+        <a href="contact.html">無料見積もりはこちら→</a>
+      </div><!-- /.p-mainVisual__text -->
+
+      <div class="p-mainVisual__canvas" id="particles-js">
+      </div><!-- /.p-mainVisual__canvas -->
+    </div><!-- /.p-mainVisual -->
+
+
+
+    <div class="p-topAbout">
+     
+      <div class="l-inner">
+        <div class="p-topAbout__wrapper">
+            <div class="p-topAbout__contents">
+              <div class="p-topAbout__items">
+                <div class="p-topAbout__img">
+                  <img src="images/about1.jpeg" alt="">
+                </div><!-- /.p-topAbout__img -->
+
+                <div class="p-topAbout__text">
+                  <div class="c-topHeading">
+                    <span>about us</span>
+                    <h2>志田美装について</h2>
+                  </div><!-- /.c-topHeading -->
+
+                  <div class="c-topTexts">
+                    <p>私たちは、岩手県花巻市を拠点に広いエリアを対象に活動しております。多様なお客様のご要望にお応えすべく、常にお客様の視点に立ち、長期的な満足度を最優先に考えることを使命としています。</p>
+                  </div><!-- /.c-topTexts -->
+
+                  <div class="c-button -center">
+                    <a href="about.html">事業所概要を見る</a>
+                  </div><!-- /.c-button -->
+                </div><!-- /.p-topAbout__text -->
+
+                <div class="p-topAbout__img2">
+                  <img src="images/about2.jpg" alt="">
+                </div><!-- /.p-topAbout__img -->
+              </div><!-- /.p-topAbout__items -->
+            </div><!-- /.p-topAbout__contents -->
+        </div><!-- /.p-topAbout__wrapper -->
+
+      </div><!-- /.l-inner -->
+    </div><!-- /.p-topAbout -->
+
+    <div class="p-topService">
+      <div class="l-inner">
+        <div class="c-section__heading">
+          <span>service</span>
+          <h2>事業内容</h2>
+        </div><!-- /.c-section__heading -->
+
+        <div class="p-topService__items">
+          <div class="p-topService__item">
+            <img src="images/service1.jpg" alt="">
+            <h3>外壁の塗装</h3>
+            <p>外壁の塗装は、建物の美観を維持するだけでなく、建物を長持ちさせるためにも非常に重要です。風雨や紫外線などから建物を守ります。</p>
+          </div><!-- /.p-topService__item -->
+          <div class="p-topService__item">
+            <img src="images/service2.jpg" alt="">
+            <h3>屋根の塗装</h3>
+            <p>屋根は、建物の外観にとって重要な部分であり、外部環境からのダメージを受けやすい部位です。適切なタイミングでの塗装で建物の機能性と安全性を守ります。</p>
+          </div><!-- /.p-topService__item -->
+
+         
+        </div><!-- /.p-topService__items -->
+
+        <div class="c-button -center">
+          <a href="service.html">詳しく見る</a>
+        </div><!-- /.c-button -->
+      </div><!-- /.l-inner -->
+    </div><!-- /.p-topService -->
+
+    <div class="p-topWorks">
+      <div class="l-inner">
+        <div class="c-section__heading">
+          <span>works</span>
+          <h2>施工事例</h2>
+        </div><!-- /.c-section__heading -->     
+
+        <div class="c-works">
+          <ul class="c-works__items">
+            <li class="c-works__item">
+              <div class="c-works__img">
+                <a href="single.html">
+                  <img src="images/mv1.jpg" alt="">
+                </a>
+              </div><!-- /.c-works__img -->
+              
+              <div class="c-works__meta">
+                <span class="c-works__cat">屋根</span><!-- /.c-works__cat -->
+                <span class="c-works__area">花巻市</span><!-- /.c-works__area -->
+              </div><!-- /.c-works__meta -->
+
+              <div class="c-works__title">
+                <a href="single.html">花巻市で屋根の塗装を行いました</a>
+              </div><!-- /.c-works__title -->
+            </li><!-- /.c-works__item -->
+            
+            <li class="c-works__item">
+              <div class="c-works__img">
+                <a href="single.html">
+                  <img src="images/mv1.jpg" alt="">
+                </a>
+              </div><!-- /.c-works__img -->
+              
+              <div class="c-works__meta">
+                <span class="c-works__cat">屋根</span><!-- /.c-works__cat -->
+                <span class="c-works__area">花巻市</span><!-- /.c-works__area -->
+              </div><!-- /.c-works__meta -->
+
+              <div class="c-works__title">
+                <a href="single.html">花巻市で屋根の塗装を行いました</a>
+              </div><!-- /.c-works__title -->
+            </li><!-- /.c-works__item -->
+
+            <li class="c-works__item">
+              <div class="c-works__img">
+                <a href="single.html">
+                  <img src="images/mv1.jpg" alt="">
+                </a>
+              </div><!-- /.c-works__img -->
+              
+              <div class="c-works__meta">
+                <span class="c-works__cat">屋根</span><!-- /.c-works__cat -->
+                <span class="c-works__area">花巻市</span><!-- /.c-works__area -->
+              </div><!-- /.c-works__meta -->
+
+              <div class="c-works__title">
+                <a href="single.html">花巻市で屋根の塗装を行いました</a>
+              </div><!-- /.c-works__title -->
+            </li><!-- /.c-works__item -->
+
+            <li class="c-works__item">
+              <div class="c-works__img">
+                <a href="single.html">
+                  <img src="images/mv1.jpg" alt="">
+                </a>
+              </div><!-- /.c-works__img -->
+              
+              <div class="c-works__meta">
+                <span class="c-works__cat">屋根</span><!-- /.c-works__cat -->
+                <span class="c-works__area">花巻市</span><!-- /.c-works__area -->
+              </div><!-- /.c-works__meta -->
+
+              <div class="c-works__title">
+                <a href="single.html">花巻市で屋根の塗装を行いました</a>
+              </div><!-- /.c-works__title -->
+            </li><!-- /.c-works__item -->
+
+            <li class="c-works__item">
+              <div class="c-works__img">
+                <a href="single.html">
+                  <img src="images/mv1.jpg" alt="">
+                </a>
+              </div><!-- /.c-works__img -->
+              
+              <div class="c-works__meta">
+                <span class="c-works__cat">屋根</span><!-- /.c-works__cat -->
+                <span class="c-works__area">花巻市</span><!-- /.c-works__area -->
+              </div><!-- /.c-works__meta -->
+
+              <div class="c-works__title">
+                <a href="single.html">花巻市で屋根の塗装を行いました</a>
+              </div><!-- /.c-works__title -->
+            </li><!-- /.c-works__item -->
+          </ul><!-- /.c-works__items -->
+        </div><!-- /.c-works --> 
+
+        <div class="c-button -center">
+          <a href="service.html">詳しく見る</a>
+        </div><!-- /.c-button -->
+      </div><!-- /.l-inner -->
+    </div><!-- /.p-topWorks -->
+
+    <div class="slider">
+      <div><img src="images/slide1.jpg" alt="" /></div>
+      <div><img src="images/slide2.jpg" alt="" /></div>
+      <div><img src="images/slide3.jpg" alt="" /></div>
+      <div><img src="images/slide4.jpg" alt="" /></div>
+      <div><img src="images/slide5.jpg" alt="" /></div>
+      <div><img src="images/slide6.jpg" alt="" /></div>
+    </div>
+
+    <div class="c-flow">
+      <div class="l-inner">
+        <div class="c-section__heading">
+          <span>flow</span>
+          <h2>施工の流れ</h2>
+        </div><!-- /.c-section__heading -->     
+        <div class="c-flow__wrapper">
+        <div class="c-flow__list">
+          <div class="c-flow__item">
+            <div class="c-flow__num">
+              <span>step.</span><p>01</p>
+            </div><!-- /.c-flow__num -->
+            
+            <div class="c-flow__content">
+              <h3>お問い合わせ</h3>
+              <p>まずはお気軽にお問い合わせください。詳しくお話しを聞かせていただくため、現地調査の日程を決定いたします。</p>
+              <p>お問い合わせは<a href="contact.html">こちら</a>から承っております。</p>
+            </div><!-- /.c-flow__content -->
+          </div><!-- /.c-flow__item -->
+
+          <div class="c-flow__item">
+            <div class="c-flow__num">
+              <span>step.</span><p>02</p>
+            </div><!-- /.c-flow__num -->
+            
+            <div class="c-flow__content">
+              <h3>訪問・現地調査</h3>
+              <p>実際に現地にお伺いし、現状確認をさせていただきます。お客様のご要望もしっかりとお聞きします。</p>
+            </div><!-- /.c-flow__content -->
+          </div><!-- /.c-flow__item -->
+
+          <div class="c-flow__item">
+            <div class="c-flow__num">
+              <span>step.</span><p>03</p>
+            </div><!-- /.c-flow__num -->
+            <div class="c-flow__content">
+              <h3>お見積もり・プランのご提案</h3>
+              <p>現状とお客様のご要望をふまえて、後日最適な塗装プランとお見積もりをご提案いたします。</p>
+            </div><!-- /.c-flow__content -->
+          </div><!-- /.c-flow__item -->
+
+          <div class="c-flow__item">
+            <div class="c-flow__num">
+              <span>step.</span><p>04</p>
+            </div><!-- /.c-flow__num -->
+            
+            <div class="c-flow__content">
+              <h3>ご契約・施工開始</h3>
+              <p>ご提案内容にご納得いただけましたら、日程調整を行い施行に移ります。</p>
+              <p>丁寧かつスピーディな施行を心がけます。</p>
+            </div><!-- /.c-flow__content -->
+          </div><!-- /.c-flow__item -->
+          
+
+          <div class="c-flow__item">
+            <div class="c-flow__num">
+              <span>step.</span><p>05</p>
+            </div><!-- /.c-flow__num -->
+            
+            <div class="c-flow__content">
+              <h3>施工完了・お支払い</h3>
+              <p>しっかりと隅々までチェックし施行完了となります。後日請求書を発行しますので、お支払いお願いいたします。</p>
+            </div><!-- /.c-flow__content -->
+          </div><!-- /.c-flow__item -->
+          
+
+        </div><!-- /.c-flow__list -->
+        </div><!-- /.c-flow__wrapper -->
+      </div><!-- /.l-inner -->
+    </div><!-- /.c-flow -->
+  </main>
+
+    <div class="c-cta">
+        <div class="c-cta__contents">
+          <div class="c-area">
+            <h2 class="c-area__title">岩手県内全域に対応しています</h2><!-- /.c-area__title -->
+
+            <ul class="c-area__list">
+              <li>県央エリア［盛岡市、滝沢市、矢巾町、紫波町、八幡平市、雫石町、岩手町、葛巻町］</li>
+              <li>県南エリア［花巻市、北上市、遠野市、金ヶ崎町、奥州市、平泉町、一関市、西和賀町］</li>
+              <li>県北エリア［二戸市、一戸町、久慈市、九戸村、野田村、普代村、軽米町、洋野町］</li>
+              <li>沿岸エリア［宮古市、山田町、大槌町、釜石市、住田町、大船渡市、陸前高田市、岩泉町、田野畑村］</li>
+            </ul><!-- /.c-area__list -->
+          </div><!-- /.c-area -->
+
+          <div class="c-contact">
+            <p class="c-contact__lead">お仕事のご依頼・ご相談はこちらから</p><!-- /.c-contact__lead -->
+
+            <div class="c-contact__info">
+              <p>お電話でのお問い合わせ</p>
+              <a href="tel:080-3330-1620"><span>tel</span>080-3330-1620</a>
+              <p class="c-contact__hour">受付時間：平日8時〜17時</p><!-- /.c-cta__hour -->
+            </div><!-- /.c-contact__info -->
+
+            <div class="c-contact__line">
+              <p>公式LINEでのお問い合わせはこちら</p>
+
+              <div class="c-contact__btn">
+                <a href="">友だち登録へ</a>
+              </div>
+            </div><!-- /.c-contact__line -->
+          </div><!-- /.c-contact -->
+
+        </div><!-- /.c-cta__contents -->
+    </div><!-- /.c-cta -->
+
+
+  <footer class="l-footer">
+    <div class="l-footer__inner">
+      <div class="l-footer__content">
+        <div class="l-footer__info">
+          <h1><img src="images/icon/logo.png" alt=""></h1>
+          <ul>
+            <li>志田美装</li>
+            <li>〒028-3111<br>岩手県花巻市石鳥谷町新堀30-38-1</li>
+            <li>TEL:<a href="tel:080-3330-1620">080-3330-1620</a></li>
+          </ul>
+        </div><!-- /.l-footer__info -->
+
+        <ul class="l-footer__menu">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="about.html">志田美装について</a></li>
+          <li><a href="service.html">サービス紹介</a></li>
+          <li><a href="archive.html">施工実績</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul><!-- /.l-footer__menu -->
+      </div><!-- /.l-footer__content -->
+
+      <small class="l-footer__copy"><a href="https://web-iwate.com/">&copy; Knowledge Service, inc.</a></small><!-- /.l-footer__copy -->
+    </div><!-- /.l-inner -->
+  </footer><!-- /.l-footer -->
+
+  
+  
+<script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+<!-- slickのJavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/particles.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script src="js/main.js"></script> 
+</body>
+</html>

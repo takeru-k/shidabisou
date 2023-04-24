@@ -1,0 +1,104 @@
+@use "../setting/setting";
+
+.p-mainVisual{
+  position: relative;
+  height: 100vh;
+}
+
+
+.p-mainVisual__slider{
+  margin-left: auto;
+}
+
+.p-mainVisual__slider .slick-slide {
+  height: 100vh;
+  overflow: hidden;
+}
+.p-mainVisual__slider .slick-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.p-mainVisual__slider li{
+  position: relative;
+}
+
+.p-mainVisual__text{
+  position: absolute;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: -140px auto 0;
+  padding: 0 20px;
+  color: #fff;
+
+  h1{
+    font-size: 24px;
+  }
+
+  a{
+    padding-top: 16px;
+    line-height: 1.75;
+  }
+}
+
+@media (min-width: 768px){
+  .p-mainVisual__text{
+    h1{
+      font-size: 40px;
+    }
+
+    a{
+      font-size: 22px;
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .p-mainVisual__text{
+    margin-top: -80px;
+
+    h1{
+      font-size: 48px;
+    }
+  }
+}
+
+
+
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15); /* 拡大率 */
+  }
+}
+.add-animation {
+  animation: zoomUp 10s linear 0s normal both;
+}
+
+.p-mainVisual__canvas{
+  position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}

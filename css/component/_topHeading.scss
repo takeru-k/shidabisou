@@ -1,0 +1,69 @@
+@use "../setting/setting";
+
+.c-topHeading{
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+
+  h2{
+    font-size: 24px;
+  }
+
+  span{
+    background: setting.$color-main;
+    -webkit-background-clip: text;//テキストでくり抜く
+    -webkit-text-fill-color: transparent;//くり抜いた部分は背景を表示
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 32px;
+    background: #000;
+  }
+}
+
+.c-topHeading__bg{
+  position: absolute;
+  top: -28px;
+  left: 0;
+  background: setting.$color-main;
+  -webkit-background-clip: text;//テキストでくり抜く
+  -webkit-text-fill-color: transparent;//くり抜いた部分は背景を表示
+  font-size: 80px;
+  letter-spacing: .05em;
+  line-height: 1;
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+
+  @media (min-width: 768px){
+    font-size: 88px;
+  }
+
+  @media (min-width: 1024px){
+    left: 6%;
+    font-size: 160px;
+    letter-spacing: .2em;
+  }
+}
+
+@media (min-width: 1024px){
+  .c-topHeading{
+    h2{
+      font-size: 36px;
+    }
+
+    &:before{
+      height: 88px;
+      top: -100px;
+      z-index: 2;
+    }
+  }
+}

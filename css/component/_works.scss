@@ -1,0 +1,81 @@
+@use "../setting/setting";
+.c-works{
+  margin-top: 20px;
+}
+
+.c-works__item{
+  margin-bottom: 20px;
+}
+
+.c-works__img{
+  img{
+    min-height: 220px;
+  }
+}
+
+.c-works__meta{
+  padding-top: 8px;
+}
+
+.c-works__cat{
+  font-size: 14px;
+  background: linear-gradient(115deg,#49c8ad,#89d1e7);
+  color: #fff;
+  padding: 4px 12px;
+}
+
+.c-works__area{
+  padding: 4px 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  margin-left: 10px;
+}
+
+.c-works__title{
+  padding-top: 12px;
+  font-weight: bold;
+}
+
+@media not all and (min-width: 768px){
+  .c-works__item{
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 16px;
+  }
+}
+
+@media (min-width: 768px){
+  .c-works__items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .c-works__item{
+    width: 48%;
+  }
+}
+
+@media (min-width: 1024px){
+  .c-works{
+    margin-top: 32px;
+  }
+
+  .c-works__items{
+    &:after{
+      content: '';
+      display: block;
+      width: 30%;
+    }
+  }
+
+  .c-works__item{
+    width: 30%;
+    padding-bottom: 28px;
+  }
+
+  .c-works__img{
+    img{
+      height: 220px;
+    }
+  }
+}

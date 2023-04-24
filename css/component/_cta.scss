@@ -1,0 +1,8 @@
+@use "../setting/setting";
+
+
+@media (min-width: 1024px){
+  .c-cta__contents{
+    display: flex;
+  }
+}

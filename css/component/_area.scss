@@ -1,0 +1,57 @@
+@use "../setting/setting";
+
+.c-area{
+  padding: 32px 24px;
+  background: linear-gradient(to right, #7cd8ef 0%, #c49fd6 26%, #f4a0a1 73%, #f3d5a4 100%);
+  color: #fff;
+}
+
+.c-area__title{
+  font-size: 20px;
+  color: #fff;
+}
+
+.c-area__list{
+  padding-top: 16px;
+  
+  li{
+    position: relative;
+    padding-left: 1em;
+    text-indent: -1em;
+    margin-bottom: 10px;
+
+    &:before {
+      background: url(../images/icon/icon-map.svg) no-repeat  center center/cover;
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-top: -4px;
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .c-area{
+    width: 60%;
+    padding: 60px;
+  }
+
+  .c-area__title{
+    font-size: 28px;
+  }
+
+  .c-area__list{
+   
+    li{
+      padding-left: 1em;
+      text-indent: -1.4em;
+
+      &:before {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@use "../setting/setting";
+.c-flex__wrapper{
+  padding-top: 24px;
+}
+
+.c-flex{
+  margin-bottom: 40px;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.c-flex__heading{
+
+  h2{
+    font-size: 20px;
+  }
+}
+
+.c-flex__num{
+  font-size: 14px;
+  background: linear-gradient(115deg,#49c8ad,#89d1e7);
+  -webkit-background-clip: text;//テキストでくり抜く
+  -webkit-text-fill-color: transparent;//くり抜いた部分は背景を表示
+  display: flex;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+.c-flex__img{
+  img{
+    min-height: 220px;
+    width: 100%;
+  }
+}
+@media not all and (min-width: 768px){
+  .c-flex__item + .c-flex__item{
+    padding-top: 24px;
+  }
+}
+
+
+@media (min-width: 768px){
+  .c-flex__wrapper{
+    padding-top: 40px;
+  }
+  .c-flex{
+    display: flex;
+    justify-content: space-between;
+    min-height: 320px;
+    margin-bottom: 64px;
+    align-items: center;
+  }
+
+  .c-flex__item{
+    width: 48%;
+
+    img{
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .c-flex__wrapper{
+    padding-top: 60px;
+  }
+  .c-flex{
+    margin-bottom: 100px;
+  }
+
+  .c-flex__heading{
+
+
+    h2{
+      font-size: 28px;
+    }
+  }
+  .c-flex__item{
+    width: 38%;
+  }
+
+  .c-flex__img{
+    width: 56%;
+  }
+}
+
+.-reverse{
+  flex-direction: row-reverse;
+}
+
+.-alignCenter{
+  align-items: center;
+}

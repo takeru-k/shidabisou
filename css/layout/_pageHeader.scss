@@ -1,0 +1,56 @@
+@use "../setting/setting";
+
+.l-pageHeader{
+  padding: 24px 0 ;
+  background: linear-gradient(-135deg, #E4A972, #9941D8);
+  text-align: center;
+  color: #fff;
+}
+
+.l-pageHeader__text{
+  padding-left: 6%;
+
+  h2{
+    font-weight: normal;
+    line-height: 1.2;
+    letter-spacing: .1em;
+  }
+
+  span{
+    color: setting.$color-sub;
+    font-size: 14px;
+    letter-spacing: .1em;
+  }
+}
+
+.l-pageHeader__heading{
+  text-align: center;
+
+  span{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-family: setting.$font-en;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6)
+  }
+
+  h2{
+    color: #fff;
+  }
+}
+
+@media (min-width: 1024px){
+  .l-pageHeader{
+    padding: 64px 0;
+    position: relative;
+  }
+
+  .l-pageHeader__text{
+    h2{
+      font-size: 36px;
+    }
+  }
+}

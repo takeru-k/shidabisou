@@ -1,0 +1,14 @@
+@use "../setting/setting";
+
+.p-topWorks{
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+
+@media (min-width: 1024px){
+  .p-topWorks{
+    padding: 80px 0;
+  }
+}
