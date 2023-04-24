@@ -1016,7 +1016,7 @@ img {
 .c-flow__num:before {
   background: linear-gradient(115deg, #49c8ad, #89d1e7);
   content: "";
-  height: 80%;
+  height: 82%;
   left: 26px;
   position: absolute;
   top: calc(1.22449vw + 10.40816px);
@@ -1083,7 +1083,7 @@ img {
   font-size: 14px;
   padding: 4px 16px;
   margin-right: 12px;
-  background: #B8CCB8;
+  background: linear-gradient(115deg, #49c8ad, #89d1e7);
   border-radius: 2px;
   display: inline-block;
   vertical-align: middle;
