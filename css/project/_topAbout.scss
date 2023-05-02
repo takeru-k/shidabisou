@@ -30,11 +30,20 @@
   }
 }
 
+@media (min-width: 768px){
+  .p-topAbout__img2{
+    img{
+      display: none;
+    }
+  }
+}
+
 
 @media (min-width: 1024px){
   .p-topAbout{
     padding: 140px 0 120px;
     background: url(../images/bg/bg.jpg) no-repeat center center/cover;
+    overflow: hidden;
 
     .l-inner{
       margin-left: auto;
@@ -75,7 +84,7 @@
   .p-topAbout__img2{
     width: 720px;
     height: 480px;
-    overflow: hidden;
+    background: url(../images/portrait.jpg) no-repeat center center/cover;
   }
 
 }

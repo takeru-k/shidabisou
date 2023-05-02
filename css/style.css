@@ -1459,6 +1459,14 @@ img {
      object-fit: cover;
 }
 
+.p-mainVisual__slider .slick-slide picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-mainVisual__slider li {
   position: relative;
 }
@@ -1555,10 +1563,16 @@ img {
     margin: 0 calc(50% - 50vw);
   }
 }
+@media (min-width: 768px) {
+  .p-topAbout__img2 img {
+    display: none;
+  }
+}
 @media (min-width: 1024px) {
   .p-topAbout {
     padding: 140px 0 120px;
     background: url(../images/bg/bg.jpg) no-repeat center center/cover;
+    overflow: hidden;
   }
   .p-topAbout .l-inner {
     margin-left: auto;
@@ -1591,7 +1605,7 @@ img {
   .p-topAbout__img2 {
     width: 720px;
     height: 480px;
-    overflow: hidden;
+    background: url(../images/portrait.jpg) no-repeat center center/cover;
   }
 }
 .p-topService {
